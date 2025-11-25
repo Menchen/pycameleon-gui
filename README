@@ -1,0 +1,9 @@
+#
+
+It need pixi as dependecy manager
+
+
+```bash
+pixi install
+pixi run python mono8_rerun.py
+```
