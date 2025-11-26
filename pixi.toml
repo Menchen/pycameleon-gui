@@ -15,3 +15,7 @@ scipy = ">=1.16.3,<2"
 
 [pypi-dependencies]
 pycameleon = ">=0.2.0, <0.3"
+
+[tasks.toucan_ndvi]
+cmd = "python toucan_ndvi_rerun.py"
+env_file = ".env"

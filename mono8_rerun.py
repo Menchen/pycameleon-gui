@@ -62,9 +62,7 @@ def run_viewer() -> None:
             rr.set_time("frame_nr", sequence=frame_nr)
             frame_nr += 1
 
-            # Log the original image
-            # rr.log("image/rgb", rr.Image(img, color_model="BGR"))
-            rr.log("image/mono8", rr.Image(img))
+            rr.log("image/mono8", rr.Image(img), static=True)
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
